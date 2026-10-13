@@ -6,7 +6,7 @@ use Model\Cita;
 use Model\CitaServicio;
 use Model\Servicio;
 
-class APIController
+class ApiController
 {
     public static function index()
     {

@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\AdminController;
-use Controllers\APIController;
+use Controllers\ApiController;
 use Controllers\CitaController;
 use Controllers\LoginController;
 use Controllers\ServicioController;
@@ -38,9 +38,9 @@ $router->get('/cita', [CitaController::class, 'index']);
 $router->get('/admin', [AdminController::class, 'index']); 
 
 // API de Cita
-$router->get('/api/Servicios', [APIController::class, 'index']);
-$router->post('/api/citas', [APIController::class, 'guardar']);
-$router->post('/api/eliminar', [APIController::class, 'eliminar']); 
+$router->get('/api/Servicios', [ApiController::class, 'index']);
+$router->post('/api/citas', [ApiController::class, 'guardar']);
+$router->post('/api/eliminar', [ApiController::class, 'eliminar']); 
 
 // CRUD de Servicios 
 
